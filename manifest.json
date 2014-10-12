@@ -1,0 +1,13 @@
+{
+    "name": "complit",
+    "manifest_version": 2,
+    "version": "0.1.0",
+    "description": "combine and split tabs.",
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["tabs"],
+    "browser_action": {
+        "default_title": "complit!"
+    }
+}
