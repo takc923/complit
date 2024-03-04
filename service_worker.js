@@ -13,7 +13,7 @@ chrome.windows.onRemoved.addListener(function(removedWinId){
     });
 });
 
-chrome.browserAction.onClicked.addListener(function(){
+chrome.action.onClicked.addListener(function(){
     chrome.tabs.query({highlighted: true, currentWindow: true}, function(tabs){
         tabs.length == 1 ? combine() : split(tabs);
     });
