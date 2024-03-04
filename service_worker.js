@@ -11,7 +11,7 @@ chrome.windows.onRemoved.addListener(removedWinId => {
     winHistory = winHistory.map(id => id === removedWinId ? -1 : id);
 });
 
-chrome.action.onClicked.addListener(tab => {
+chrome.action.onClicked.addListener(_ => {
     chrome.tabs.query({highlighted: true, currentWindow: true}, tabs => {
         tabs.length === 1 ? combine() : split(tabs);
     });
