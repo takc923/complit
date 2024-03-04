@@ -1,7 +1,7 @@
 {
   "name": "complit",
   "manifest_version": 3,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "combine and split tabs.",
   "background": {
     "service_worker": "service_worker.js"
