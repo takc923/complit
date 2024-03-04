@@ -25,7 +25,7 @@ function combine() {
     });
 }
 
-function split(tabs){
+function split(tabs) {
     const tabIds = tabs.map(tab => tab.id);
     const firstTabId = tabIds.shift();
     chrome.windows.create({tabId: firstTabId}, win => {
